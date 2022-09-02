@@ -16,7 +16,7 @@
 
 * Vào CH Play Hoặc Appstore Tải Google Cloud Để Chạy Tool Nhé!
 
-* ```git clone https://github.com/Vihungdepzai/LoveTool.git```
+* ```git clone https://github.com/ViDucHung206/LoveTool```
 * ```cd LoveTool```
 * ```sh setup.sh```
 * ```py abc.py```
